@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.title{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: slategrey;
+}
+
+h1 , h2{
+    color: darkslategrey;
+    text-align: center;
+    padding: 1em;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    background-color: slategrey;
+    border-top: 2px dashed darkslategrey;
+}
+
+nav p ,nav a{
+    font-size: 2em;
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    width: 25%;
+    margin: 3%;
+    justify-content: center;
+    background: linear-gradient(50deg, slategrey, white);
+    border-radius: 1em 0em 1em 1em ;
+    box-shadow: 1px 1px 3px grey;
+    flex-direction: column;
+}
+
+.card img{
+    width: 60%;
+    margin: auto;
+    border-radius: 50% 1% 50% 50%;
+    margin-top: 1%;
+}
+
+.my_card_text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1em;
+}
+
+p.my_card_text{
+    text-decoration: underline;
+    font-size: 90%;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 90%;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    background-color: darkslategrey;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+footer a{
+    text-align: center;
+    color: slategrey;
+    text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+    .title{
+        justify-content: center;
+    }
+    h1, h2{
+        font-size: 1.5em;
+    }
+    nav p , nav a{
+        font-size: 1.3em;
+    }
+    .content{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .card{
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width: 360px) {
+    .mail{
+        display: none;
+    }
+}
